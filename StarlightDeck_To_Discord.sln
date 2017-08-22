@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.8
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarlightDeck_To_Discord", "StartlightDeck_To_Discord\StarlightDeck_To_Discord.csproj", "{933FF6AA-5B67-4404-8457-3247A0A9F59F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarlightDeck_To_Discord", "StarlightDeck_To_Discord\StarlightDeck_To_Discord.csproj", "{933FF6AA-5B67-4404-8457-3247A0A9F59F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarlightDeck_To_Discord.Tests", "StarlightDeck_To_Discord.Tests\StarlightDeck_To_Discord.Tests.csproj", "{B7E2EA59-244B-4619-99AF-098C7DAA6EF4}"
 EndProject

@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\StartlightDeck_To_Discord\StarlightDeck_To_Discord.csproj" />
+    <ProjectReference Include="..\StarlightDeck_To_Discord\StarlightDeck_To_Discord.csproj" />
   </ItemGroup>
 
 </Project>
