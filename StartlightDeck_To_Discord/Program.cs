@@ -8,7 +8,7 @@ using DSharpPlus;
 using System.Reactive;
 using NCrontab;
 
-namespace StartlightDeck_To_Discord
+namespace StarlightDeck_To_Discord
 {
     class Program
     {
@@ -22,14 +22,14 @@ namespace StartlightDeck_To_Discord
             System.Reactive.Linq.Observable.Generate(0, d => true, d => d + 1, d => d, d => new DateTimeOffset(schedule.GetNextOccurrence(DateTime.Now)))
                 .Subscribe(async x =>
                 {
-                    string target = await StartlightAPIController.GetAPI();
+                    string target = await StarlightAPIController.GetAPI();
                     await discordClient.SendMessageToTarget(target);
                 });
             Console.ReadLine();
             await discordClient.Disconnect();
         }
     }
-    class StartlightAPIController
+    public class StarlightAPIController
     {
         public static async Task<string> GetAPI()
         {
@@ -54,7 +54,7 @@ namespace StartlightDeck_To_Discord
             public override string ToString()
             {
                 return
-                    $"{this.Date.ToString()}現在{Environment.NewLine}" +
+                    $"{this.Date.ToString("yyyy/MM/dd H:mm:ss")}現在{Environment.NewLine}" +
                     $"1位：{this.Rank1}{Environment.NewLine}" +
                     $"2000位：{this.Reward1}{Environment.NewLine}" +
                     $"10000位：{this.Reward2}{Environment.NewLine}" +

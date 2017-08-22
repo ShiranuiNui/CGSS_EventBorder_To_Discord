@@ -15,6 +15,7 @@
     <PackageReference Include="ncrontab" Version="3.3.0" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
     <PackageReference Include="System.Reactive" Version="4.0.0-preview00001" />
+    <PackageReference Include="xunit" Version="2.3.0-beta4-build3742" />
   </ItemGroup>
 
 </Project>
