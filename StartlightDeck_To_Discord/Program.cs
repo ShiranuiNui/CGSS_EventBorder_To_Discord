@@ -18,7 +18,7 @@ namespace StartlightDeck_To_Discord
         {
             var schedule = CrontabSchedule.Parse("30 0 */3 * * *", new CrontabSchedule.ParseOptions() { IncludingSeconds = true });
             var discordClient = new DiscordClient(args[0]);
-            await discordClient.Connect(uint.Parse(args[1]));
+            await discordClient.Connect(ulong.Parse(args[1]));
             System.Reactive.Linq.Observable.Generate(0, d => true, d => d + 1, d => d, d => new DateTimeOffset(schedule.GetNextOccurrence(DateTime.Now)))
                 .Subscribe(async x =>
                 {
