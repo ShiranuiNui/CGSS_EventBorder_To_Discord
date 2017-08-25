@@ -25,7 +25,7 @@ namespace StarlightDeck_To_Discord
                     string target = await StarlightAPIController.GetAPI();
                     await discordClient.SendMessageToTarget(target);
                 });
-            Console.WriteLine();
+            Console.ReadLine();
             await discordClient.Disconnect();
         }
     }
